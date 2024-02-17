@@ -1,0 +1,415 @@
+:root {
+   --orange-color: #F77E23;
+   --white-color: #FFFFFF;
+   --dark-color: #000000;
+
+}
+
+html,body {
+   overflow-x: hidden;
+   background-color: whitesmoke;
+   }
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+*,
+*::after *::before {
+
+   box-sizing: border-box;
+}
+
+.header {
+   align-items: center;
+   justify-content: space-around;
+   z-index: 0;
+   
+   
+}
+
+.body {
+   margin: 0;
+   font-family: "Poppins", sans-serif;
+}
+
+
+.wrapper {
+
+   margin: 0 auto;
+   z-index: 0;
+   max-width: 1300px;
+
+}
+
+
+
+/*Button*/
+
+.btn {
+   padding: 12px 28px;
+   text-decoration: none;
+   margin: 0px 10px;
+   font-size: 16px;
+   letter-spacing: -0.02em;
+   color: white;
+   border-radius: 5px;
+   font-weight: normal;
+   display: inline-block;
+   position: relative;
+   z-index: 1;
+
+}
+
+.btn.orange {
+   background: var(--white-color);
+   color: #F77E23;
+   margin-left: 0;
+   left: 78px;
+}
+
+.btn.sign-up {
+   background: #FF6F28;  
+   position: absolute;
+   padding: 16px 32px;
+   left: 595px;
+   top: 315px;
+   font-family: Source Sans Pro;
+   font-size: 16px;
+   font-weight: 200;
+   line-height: 20px;
+   letter-spacing: 0em;
+   text-align: left;
+
+
+}
+
+.btn.invisible {
+   background: none;
+   left: 142px;
+}
+
+
+.search-icon::before {
+   content: url(../img/bx_search.svg) ;
+   position: absolute;
+   top: 13px;
+   left: 1055px;
+}
+
+.scroll-icon {
+   content: url(../img/ant-design_arrow-up-outlined.png);
+   position: absolute;
+   top: 471px;
+   left: 1270px;
+   width: 50px;
+   height: 50px;  
+   padding: 13px;
+   border-radius: 5000px;
+   background-color: #F77E23;
+  
+}
+
+header {
+   height: 100vh;
+   width: 100%;
+   background-image: url(../img/image\ 13.png);
+   z-index: 0;
+   padding-right: 0%;
+   background-repeat: no-repeat;
+   background-size: cover;
+   object-fit: cover;
+}
+
+
+
+nav {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   position: absolute;
+   width: 1240px;
+   top: 36px;
+   z-index: 100;
+}
+
+nav.logo img {
+   position: absolute;
+}
+
+nav ul {
+   display: flex;
+   align-items: center;
+   gap: 60px;
+   list-style: none;
+   margin: 0;
+}
+
+nav ul li a {
+   font-family: "Open Sans", sans-serif;
+   font-size: 16px;
+   font-weight: 200;
+   letter-spacing: -0.02em;
+   text-align: center;
+   text-decoration: none;
+   color: #FFFFFF;
+   z-index: 1;
+   border: none;
+}
+
+
+/* Hero section*/
+
+.hero-section {
+   position: absolute;
+   z-index: 10;
+   height: 100vh;
+   width: 100%;
+   top: 164px;
+}
+
+.hero-section h1 {
+
+   font-family: "Poppins", sans-serif;
+   font-size: 60px;
+   font-weight: 700;
+   line-height: 90px;
+   letter-spacing: 0em;  
+   z-index: 10;
+   margin-bottom: 20;
+   color: white;
+   width: 1340px;
+   text-align: center;
+
+}
+
+.hero-section p {
+
+   font-family: "Source Sans Pro", sans-serif;
+   font-size: 24px;
+   font-weight: 200;
+   line-height: 36px;
+   letter-spacing: 0em;
+   color: white;
+   line-height: 30px;
+   z-index: 10;
+   margin: 30px 10px;
+   width: 1340px;
+   text-align: center;
+}
+
+
+.section-card {
+
+   justify-content: space-between;
+   background: #FFFFFF;
+   padding: 39px 180px;
+   border-radius: 10px;
+   left: 125px;
+   top: 169px;
+   display: flex;
+   gap: 60px;
+   margin: 0;
+   position: relative;
+   width: 1050px;
+  
+}
+
+
+
+.section {
+
+   font-family: "Poppins", sans-serif;
+   font-size: 24px;
+   font-weight: 400;
+   line-height: 36px;
+   letter-spacing: 0em;
+   color: black;
+   z-index: 1;
+   text-decoration: none;
+   text-align: center;
+   left: 55px;
+   position: relative;
+}
+
+.sc-one::before {
+   content: url(../img/Frame\ 6520.svg);
+   position: absolute;
+   top: 60%;
+   right: 130px;
+   transform: translateY(-50%);
+}
+
+.sc-two::before {
+   content: url(../img/Frame\ 6520\ \(1\).svg);
+   position: absolute;
+   top: 60%;
+   right: 170px;
+   transform: translateY(-50%);
+}
+
+.sc-three::before {
+   content: url(../img/Frame\ 6520\ \(2\).svg);
+   position: absolute;
+   top: 60%;
+   right: 170px;
+   transform: translateY(-50%);
+   
+}
+
+/*End of header*/
+
+.container {
+   display: grid;
+   place-items: center;
+   margin-inline: 1.5rem;
+   padding-block: 5rem;
+
+}
+
+.card--container {
+   display: grid;
+   row-gap: 3.5rem;
+}
+
+.card--article {
+   position: relative;
+}
+
+.card-image {
+   width: 328px;
+   border-radius: 1rem;
+}
+
+.card--data {
+   width: 280px;
+   background-color: whitesmoke;
+   padding: 1.5rem 2rem;
+   box-shadow: 0 8px 24px hsla(0, 0%, 0%, .15);
+   border-radius: 1rem;
+   position: absolute;
+   bottom: -2rem;
+   left: 0;
+   right: 0;
+   margin-inline: auto;
+   Opacity: 0;
+   transition: opacity 1s 1s;
+}
+
+.card-title {
+   font-size: 45px;
+   font-weight: 500;
+   color: var(--dark-color);
+   margin-bottom: .75rem;
+   text-align: center;
+}
+
+.container h2 {
+   font-family: "Poppins" , sans-serif;
+font-size: 48px;
+font-weight: 600;
+line-height: 72px;
+letter-spacing: 0em;
+text-align: left;
+top: 875px;
+left: 540px;
+text-align: center;
+position: absolute;
+}
+
+.card-title:hover {
+   text-decoration: none;
+}
+
+.card--article:hover .card--data{
+   animation: show data 1s forwards;
+   opacity: 1;
+   transition: opacity .3s;
+}
+
+.card--article:hover {
+   animation: remove-overflow 2s forwards;
+}
+
+.card--article:not(:hover) {
+   animation: show-overflow 2s forwards;
+}
+
+.card--article:not(:hover) .card--data{
+   animation: show-overflow 1s forwards;
+}
+
+@keyframes show-data {
+   50%{
+      transform: translateY(-10rem);
+   }
+   100%{
+      transform: translateY(-7rem);
+   }
+}
+
+@keyframes remove-overflow{
+   to{
+      overflow: initial;
+   }
+}
+
+@keyframes remove-data{
+   0%{
+      transform: translateY(-7rem)
+   }
+   50%{
+      transform: translateY(-10rem)
+   }
+   100%{
+      transform: translateY(5rem)
+   }
+}
+
+@keyframes show-overflow{
+   0%{
+      overflow: initial;
+      pointer-events: none;
+   }
+   50%{
+     overflow: hidden ;
+   }
+}
+
+@media screen and (max-width: 340px) {
+   .container{
+      margin-inline: 1rem
+
+   }
+
+   .card--data{
+      width: 250px;
+      padding: 1rem;
+   }
+}
+
+@media screen and (min-width:768px) {
+   .card--container{
+      grid-template-columns: repeat(2,1fr);
+      column-gap: 1.5rem;
+
+   }
+}
+
+@media screen and (min-width: 1120px)  {
+   .container{
+      height: 100vh;
+   }
+   .card--container{
+      grid-template-columns: repeat(4,1fr);
+   }
+   .card-image{
+      width: 348px;
+   }
+   .card--data{
+      width: 316px;
+      padding-inline: 2.5rem;
+   }
+}
